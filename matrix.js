@@ -3,7 +3,7 @@ var s = window.screen;
 var width = q.width = s.width;
 var height = q.height = s.height;
 var letters = Array(256);
-q.addEventListener("mousemove", function(e){
+window.addEventListener("mousemove", function(e){
  
     //座標を取得する
     var mX = e.pageX;  //X座標
