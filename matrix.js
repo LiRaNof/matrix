@@ -22,7 +22,7 @@ var draw = function () {
     text = String.fromCharCode(65296+Math.random()*10);
     x_pos = index * 10;
     q.getContext('2d').fillText(text, x_pos, y_pos);
-    letters[index] = (y_pos > 758 ) ? 759 : y_pos + 10;
+    letters[index] = (y_pos > 758 ) ? 760 : y_pos + 10;
   });
 };
 setInterval(draw, 33);
