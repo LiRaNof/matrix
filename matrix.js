@@ -19,11 +19,13 @@ var draw = function () {
   q.getContext('2d').fillRect(0,0,width,height);
   q.getContext('2d').fillStyle='#0F0';
   letters.map(function(y_pos, index){
+   if(y_pos <1000){
     text = String.fromCharCode(65296+Math.random()*10);
     x_pos = index * 10;
     q.getContext('2d').fillText(text, x_pos, y_pos);
     letters[index] = (y_pos > 1000 ) ? 1000 : y_pos + 10;
-  });
-};
+    }
+   });
+ };
 setInterval(draw, 33);
 }
