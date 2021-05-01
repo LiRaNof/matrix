@@ -1,3 +1,4 @@
+window.onload=function(){
 var s = window.screen;
 var width = q.width =1000;
 var height = q.height = 1000;
@@ -25,3 +26,4 @@ var draw = function () {
   });
 };
 setInterval(draw, 33);
+}
