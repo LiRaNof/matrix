@@ -1,7 +1,7 @@
 window.onload=function(){
 var s = window.screen;
-var width = q.width =1000;
-var height = q.height = 1000;
+var width = q.width = s.width;
+var height = q.height =s.height;
 var letters = Array(256);
 q.addEventListener("mousemove", function(e){
  
